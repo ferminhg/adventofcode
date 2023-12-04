@@ -2,16 +2,18 @@ package main
 
 import (
 	"bufio"
+	adoc2023 "ferminhg/adventofcode/2023"
 	"fmt"
 	"log"
 	"os"
-
-	adeventofcode2023 "ferminhg/adventofcode/2023"
 )
 
 func main() {
 	input := readInput("2023/day1.input")
-	fmt.Printf("day1(input) = %d\n", adeventofcode2023.Day1(input))
+	//fmt.Printf("day1(input) = %d\n", adoc2023.Day1(input))
+	input = readInput("2023/day2.input")
+	value, power := adoc2023.Day2(input)
+	fmt.Printf("day2(input) = %d, %d\n", value, power)
 }
 
 // read input from file

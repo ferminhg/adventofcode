@@ -1,4 +1,4 @@
-package adeventofcode2023
+package adoc2023
 
 import (
 	"strconv"
