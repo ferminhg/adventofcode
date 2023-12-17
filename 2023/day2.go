@@ -1,7 +1,6 @@
 package adoc2023
 
 import (
-	"fmt"
 	"strconv"
 	"strings"
 )
@@ -21,7 +20,7 @@ func Day2(rawGames []string) (int, int) {
 }
 
 func calculatePower(sets []string) int {
-	fmt.Printf("Sets: %s\n", sets)
+	//fmt.Printf("Sets: %s\n", sets)
 	blues, reds, greens := getMaxColor(sets)
 	return blues * reds * greens
 }
@@ -43,7 +42,7 @@ func getMaxColor(sets []string) (int, int, int) {
 			greens = g
 		}
 	}
-	fmt.Printf("Max colors: %d %d %d\n", blues, reds, greens)
+	//fmt.Printf("Max colors: %d %d %d\n", blues, reds, greens)
 	return blues, reds, greens
 }
 
